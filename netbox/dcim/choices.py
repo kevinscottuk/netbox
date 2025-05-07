@@ -1021,14 +1021,21 @@ class InterfaceTypeChoices(ChoiceSet):
     # Other
     TYPE_OTHER = 'other'
 
+    DBBROADCAST = (
+        _('dB Broadcast'),
+        (
+            (TYPE_VIRTUAL, _('Virtual')),
+        ),
+
+    )
+
     CHOICES = (
-         (
-            _('dB Broadcast'),
+        (
+            _('dB Broadast'),
             (
-                (TYPE_VIRTUAL, _('Virtual')),
+                (DBBROADCAST, _('Commonly Used Broadcast Types')),
             ),
         ),
-            
         (
             _('Virtual interfaces'),
             (

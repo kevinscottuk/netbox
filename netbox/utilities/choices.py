@@ -64,6 +64,7 @@ class ChoiceSet(metaclass=ChoiceSetMeta):
     statically within the class as CHOICES and/or gleaned from the FIELD_CHOICES configuration parameter.
     """
     CHOICES = list()
+    DBBROADCAST = list()
 
     @classmethod
     def values(cls):

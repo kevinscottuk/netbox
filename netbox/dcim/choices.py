@@ -1022,6 +1022,13 @@ class InterfaceTypeChoices(ChoiceSet):
     TYPE_OTHER = 'other'
 
     CHOICES = (
+         (
+            _('dB Broadcast'),
+            (
+                (TYPE_VIRTUAL, _('Virtual')),
+            ),
+        ),
+            
         (
             _('Virtual interfaces'),
             (
